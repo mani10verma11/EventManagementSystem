@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and General Styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    width: 100%;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  header a:hover {
+    color: #d1e8ff;
+  }
+  
+  /* Main Content Styling */
+  main {
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  select,
+  textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ab8;
+  }
+  
+  /* Events List Styling */
+  #events-section h2,
+  #event-form h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4a90e2;
+  }
+  
+  #events-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .event-item {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-item h3 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .event-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Role-Based Page Headers */
+  .customer-header,
+  .provider-header {
+    font-family: 'Poppins', sans-serif;
+    color: #4a90e2;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    main {
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  }

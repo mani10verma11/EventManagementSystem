@@ -1,0 +1,133 @@
+/* General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f2f2f2;
+    /* Accent Light Gray */
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header Styling */
+
+header {
+    background-color: #f19524;
+    /* Primary Bright Orange */
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+header h1:hover {
+    color: #ffb6c1;
+    /* Secondary Soft Pink */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    background: #ffb6c1;
+    /* Secondary Soft Pink */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+nav a:hover {
+    color: #ff8c00;
+    /* Primary Bright Orange */
+}
+
+
+/* Hero Section */
+
+.hero {
+    background-image: url('https://th.bing.com/th/id/R.46971cc4d372146e78b116b537c90395?rik=%2f9B7y%2f9UWVHiGA&riu=http%3a%2f%2fbirthdayinspire.com%2fwp-content%2fuploads%2f2016%2f05%2fcarnival-birthday-party-ideas.jpg&ehk=kauxwASEZMKFSn1Lxfa6bx1oW%2fFSEt6dDj0ob1xu%2fvo%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(255, 140, 0, 0.7); Semi-transparent Bright Orange */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* Ensures content is above the overlay */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
